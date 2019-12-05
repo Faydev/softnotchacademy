@@ -263,8 +263,8 @@ function myfun() {
 	var inputName = document.getElementById("input-name").value;
 	var inputMail = document.getElementById("input-mail").value;
 	var inputNumber = document.getElementById("input-number").value;
-	var inputPassword = document.getElementById("input-password")
-	  .value;
+	var inputPassword = document.getElementById("input-password").value;
+	var inputCourse = document.getElementById("input-course").value;
 	var button = document.querySelector(".btn");
 	
 	  if (inputName == "") {
@@ -276,8 +276,12 @@ function myfun() {
 		document.getElementById("msg").innerHTML = "oops! you too have an email...";
 		return false;
 	  }
-	}
-	
+
+	  if (inputNumber == "") {
+		  document.getElementById("phone").innerHTML = "oops! number is necessary...";
+		  return false;
+	  }
+
 	if (inputPassword == "") {
 		document.getElementById("pass").innerHTML = "oops! please your password...";
 		return false;
@@ -287,13 +291,11 @@ function myfun() {
 		document.getElementById("pass").innerHTML = "password must be greater than 4 characters...";
 		return false;
 	  }
-	
-	  if (inputPassword.length > ) {
-		document.getElementById("pass").innerHTML = "password must not be greater than 6 characters...";
-		return false;
+
+	  if (inputCourse == "") {
+		  document.getElementById("course").innerHTML = "please select your course...";
+		  return false;
 	  }
+	}
 	
-	//   if (inputPassword !== inputConfirmpassword) {
-	// 	document.getElementById("passw").innerHTML =
-	// 	  "oops! password does not match...";
-	// 	return false;
+	

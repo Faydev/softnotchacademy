@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="bg-top navbar-light">
+    <div class="container bg-top navbar-light">
     	
     		<div class="row no-gutters d-flex align-items-center align-items-stretch">
     			<div class="col-md-4 d-flex align-items-center py-4">
@@ -78,7 +78,7 @@
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');">
+    <section class="container hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -88,12 +88,12 @@
         </div>
       </div>
 		
-		<section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
-			<div class="container"> id
+		<section class="container ftco-section ftco-no-pt ftco-no-pb contact-section">
+			<div class="container"> 
 				<div class="row d-flex align-items-stretch no-gutters">
 					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
             <h2>REGISTER NOW</h2>
-						<form action="#" method="POST" id="contact form" onsubmit="return myfun()" >
+						<form action="#" method="GET" id="contact form" onsubmit="return myfun()" >
               <div class="form-group">
                 <input type="text" class="form-control" id="input-name" placeholder="Name" value="">
                 <span id="messages" style="color:red"></span>
@@ -111,7 +111,7 @@
                 <span id="pass" style="color:red"></span>
               </div>
               <div class="form-group">
-                <select name="" id="" class="form-control">
+                <select name="" id="input-course" class="form-control" value="">
                   <option value="">Select Your Course</option>
                   <option value="">Wed design</option>
                   <option value="">UI/UX</option>
@@ -122,6 +122,7 @@
                   <option value="">Artificial Intellegence</option>
                   <option value="">Python</option>
                 </select>
+                <span id="course" style="color:red"></span>
               </div>
               <div class="form-group">
                   <label>Upload a photo</label>
@@ -141,7 +142,7 @@
 
 
 		
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <footer class="container ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-6 col-lg-3">
